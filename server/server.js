@@ -42,7 +42,7 @@ const auth = async (req, res, next) => {
 };
 const adminOnly = (req, res, next) => (req.user.role === 'admin' ? next() : res.status(403).json({ error: 'Admins only' }));
 const canTouch = (t, u) => u.role === 'admin' || String(t.createdBy) === u.id || String(t.assignee) === u.id;
-
+app.get('/', (req, res) => res.json({ status: 'TaskFlow API is running' }));
 // ---- Auth ----
 app.post('/api/auth/register', wrap(async (req, res) => {
   const { name, email, password } = req.body;
