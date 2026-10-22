@@ -9,7 +9,9 @@ A team task board with role-based access. Members manage their own work, admins 
 ![Node.js](https://img.shields.io/badge/Node.js-Express-339933?logo=nodedotjs&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose-47A248?logo=mongodb&logoColor=white)
 
-**Live demo:** _coming soon_
+**Live demo:** https://taskflow-kappa-gray.vercel.app/
+
+> The first load can take up to a minute because the free server sleeps when idle. Register an account to try it. The first account on a fresh database becomes the admin.
 
 ## Screenshots
 
